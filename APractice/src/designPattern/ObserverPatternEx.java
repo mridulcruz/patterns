@@ -19,9 +19,9 @@ class Observer {
 class Subject implements IObserver {
 	List<Observer> lst = new ArrayList<>();
 
-	static int i;
+	private int i;
 
-	void setFlag(int b) {
+	protected void setFlag(int b) {
 		i = b;
 		update();
 	}
